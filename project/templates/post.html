@@ -1,0 +1,13 @@
+{% extends 'flatpages/default.html' %}
+
+
+{% block title %}
+Post
+{% endblock title %}
+
+
+{% block content %}
+    <h1>{{ post.header }}</h1>
+    <h2>{{post.time_in| date:'d M Y'}}</h2>
+    <h2>{{post.text_post}}</h2>
+{% endblock content %}
